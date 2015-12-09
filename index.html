@@ -28,35 +28,34 @@
         padding: 8px 24px;
         font-family: "Helvetica", Monaco, monospace;
         font-size: 10pt;
-        color: #fff;
-        text-align: left;
-        background: rgba(42, 104, 166, 0.9);
+        color: #240e0e;
+        text-align: center;
+        background: #fff;
         -webkit-border-radius: 4px;
         border-radius: 4px;
         z-index: 9999;
         overflow: auto;
     }
     a {
-      color: #fff;
+      color: #066d0a;
     }
 </style>
 <div id='map'></div>
-<div id='title'><font size='6'>The Noland Trail</font size>
-<br>Recreating <a target="blank" href="http://jonahsmaps.tumblr.com/post/122956700892/noland-trail-second-edition"> this map</a>
-with Mapbox Studio & Vector Tiles
-<br>Made by <a target="blank" href="https://twitter.com/jonahadkins">Jonah Adkins</a></div>
+<div id='title'><font size='6'>SRD</font size>
+<br>Spinning Studio Stylin' &amp; Vector Tiles from <a target="blank" href="http://mapbox.com">Mapbox</a>
+<br>Manufacturing: <a target="blank" href="https://twitter.com/spatialindex">SRD-GIS</a></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9uYWhhZGtpbnMiLCJhIjoiRlVVVkx3VSJ9.9sdVEK_B_VkEXPjssU5MqA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3JkLWdpcyIsImEiOiJOamV0VS1FIn0.DUqhPVEzu-RFtWcAVPtQ1w';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/jonahadkins/cihhvsk6100s4jnkx4v991bxi',
-    center: [-76.4845, 37.0503],
-    pitch: 40, // pitch in degrees
-    bearing: 90, // bearing in degrees
-    zoom: 15, // starting zoom
+    style: 'mapbox://styles/srd-gis/cigs8fioo006caakn0x2ocnz9',
+    center: [-125.5, 50.28],
+    pitch: 30, // pitch in degrees
+    bearing: 350, // bearing in degrees
+    zoom: 8.5, // starting zoom
     //attributionControl: true,
-    minZoom: 15,
-    maxZoom: 17
+    minZoom: 8.5,
+    maxZoom: 11
     });
 
     // Add zoom and rotation controls to the map.
